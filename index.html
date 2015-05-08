@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>ferguson tweets</title>
+
+		<meta name="description" content="A brief discussion of collecting Ferguson Twitter data">
+		<meta name="author" content="Ed Summers">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+    <div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+
+        <section data-background="img/hands-up.jpg">
+          <aside class="notes">
+            <p>Talk about technical and ethical issues related to providing access to a Ferguson social media collection. Interested in hearing about different approaches people come up with since this is a relatively new area for archival research and practice.</p>
+            <blockquote>the existence, preservation and availability of archives, documents, records in our society are very much determined by the distribution of wealth and power. That is, the most powerful, the richest elements in society have the greatest capacity to find documents, preserve them, and decide what is or is not available to the public. This means government, business and the military are dominant.</blockquote>
+          </aside>
+        </section>
+
+        <section data-background="img/zeynep.png">
+          <aside class="notes">
+            Zeynep Tufekci (UNC iSchool) muses on the ways that algorithms
+            shape the media, and our experience. Twitter, and BlackTwitter
+            provides an unprecedented view into a community that has been
+            denied a voice in mainstream media.
+          </aside>
+        </section>
+
+        <section data-background="img/api.png">
+          <aside class="notes">
+          </aside>
+        </section>
+
+        <section>
+          <code style="color: #00ff00; font-size: larger;">
+            twarc.py --search ferguson
+          </code>
+        </section>
+
+        <section>
+          <code style="color: #00ff00; font-size: larger;">
+            twarc.py --stream ferguson
+          </code>
+        </section>
+
+        <section>
+          <h1>13,480,00 tweets</h1>
+          <p>August 10, 2014 - August 27, 2014</p>
+          <aside class="notes">
+          </aside>
+        </section>
+
+        <section>
+          <img src="img/tweet-graph.png">
+          <aside class="notes">
+          </aside>
+        </section>
+
+        <section>
+          <h1>63G of <a target="_new" href="tweet.html">JSON</a></h1>
+          <h2 class="fragment">8.4 compressed</h2>
+          <aside class="notes">
+          Technical accessibility issues. How do you provide access to this
+          content?
+          </aside>
+        </section>
+
+        <section>
+          <h3>Not just 140 characters.</h3>
+          <ul>
+            <li class="fragment">time</li>
+            <li class="fragment">hashtags</li>
+            <li class="fragment">geo coordinates</li>
+            <li class="fragment">places</a>
+            <li class="fragment">embedded media</li>
+            <li class="fragment">retweet</li>
+            <li class="fragment">reply to</li>
+            <li class="fragment">user</li>
+            <li class="fragment">profile</li>
+            <li class="fragment">avatar</li>
+            <li class="fragment">follower count</li>
+            <li class="fragment">Twitter API</li>
+          </ul>
+        </section>
+
+        <section>
+          <h1><a target="_new" href="tweet.html">JSON</a></h1>
+          <aside class="notes">
+          Anatomy of a tweet. Twitter's documentation is quite good.
+          </aside>
+        </section>
+
+        <section data-background="img/archive-it.png">
+          <aside class="notes">
+          </aside>
+        </section>
+
+        <section>
+          <h3><a target="_new" href="https://edsu.github.io/ferguson-urls/">August 10-27, 2014</a></h3>
+          <p>417,972 Unique Unshortened URLs</p>
+          <aside class="notes">
+          </aside>
+        </section>
+
+        <section>
+          <h3><a href="https://edsu.github.io/ferguson-tweet-viewer/"
+              target="_new">UMD Ferguson Town Hall Meeting</a></h3>
+          <p>
+          December 3, 2014
+          </p>
+          <aside class="notes">
+          Random imagery from tweets used as a backdrop for the townhall meeting.
+          </aside>
+        </section>
+
+        <section>
+          <h2><a href="http://mith.umd.edu/researching-ferguson-update-previewing-miths-teach-ins-blacklivesmatter-umd/">#BlackLivesMatter Teach-Ins</a></h2>
+          <ol>
+            <li class="fragment">Organizing Meeting</li>
+            <li class="fragment">Tweet Collection</li>
+            <li class="fragment">Ethics, Rights and Data Management</li>
+            <li class="fragment">Basic Navigagtion and Analysis</li>
+            <li class="fragment">Advanced Analytical Techniques</li>
+          </ol>
+          <aside class="notes">
+          </aside>
+        </section>
+
+        <section>
+        <h2>Ferguson</h2>
+        <h3>Indictment Decision of Darren Wilson</h3>
+        <h3>November 11 - December 8, 2015</h3>
+        <h3>15,080,078 tweets</h3>
+        </section>
+
+        <section>
+        <h2>Ferguson</h2>
+        <h3>Department of Justice Report</h3>
+        <h3>February 25 - March 21, 2015</h3>
+        <h3>2,033,898 tweets</h3>
+        </section>
+
+        <section>
+        <h2>#WalterScott</h2>
+        <h3>April 1 - April 13, 2015</h3>
+        <h3>846,602 tweets</h3>
+        </section>
+
+        <section>
+          <h2>#FreddieGray</h2>
+          <h3>April 15, 2015 - Present</h3>
+          <h3>2,887,755</h3>
+        </section>
+
+        <section>
+          <h2>#BaltimoreUprising</h2>
+          <h3>April 25, 2015 - Present</h3>
+          <h3>2,157,853</h3>
+        </section>
+
+        <section data-background="img/tos1.png">
+          <aside class="notes">
+          Twitter likes to embellish its socially progressive image, but 
+          it's Terms of Service unsurprisingly and necessarily reflect 
+          its business interests. Gnip as data reseller, purchased by
+          Twitter. Shutting off DataSift.
+          </aside>
+        </section>
+
+        <section>
+          <img src="img/tos2.png">
+          <aside class="notes">
+            Explain how only IDs can be shared, and how you can 
+            rehydrate data. 
+          </aside>
+        </section>
+
+
+        <section>
+        <img src="img/deletes.png">
+        <p><a href="https://medium.com/on-archivy/tweets-and-deletes-727ed74f84ed">Tweets and Deletes: Silences in the Social Media Archive</a></p>
+          <aside class="notes">
+            Point out rate of deletes, and slight difference in delete rates.
+          </aside>
+        </section>
+
+        <section>
+        <h2>Questions/Comments/Ideas?</h2>
+        <p>Please get in touch!</p>
+        <p><a href="mailto:ehs@pobox.com">ehs@pobox.com</a><br><a href="http://twitter.com/edsu">@edsu</a></p>
+        </section>
+
+        <section>
+          <h2>Image Credits</h2>
+          <ul>
+            <li><a href="https://commons.wikimedia.org/wiki/File:Protesters_with_signs_in_Ferguson.jpg">Protesters with signs in Ferguson</a> by Jamelle Bouie</li>
+            <li><a href="https://medium.com/message/ferguson-is-also-a-net-neutrality-issue-6d2f3db51eb0">What Happens to #Ferguson Affects Ferguson: Net Neutrality, Algorithmic Filtering and Ferguson</a> by Zeynep Tufeckci</li>
+          </ul>
+        </section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
